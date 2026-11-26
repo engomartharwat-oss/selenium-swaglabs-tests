@@ -1,0 +1,4 @@
+description,firstName,lastName,postalCode,expectedError
+Missing first name,,Tharwat,11511,Error: First Name is required
+Missing last name,Omar,,11511,Error: Last Name is required
+Missing postal code,Omar,Tharwat,,Error: Postal Code is required
