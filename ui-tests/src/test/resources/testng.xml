@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Swag Labs UI Suite" verbose="1" parallel="classes" thread-count="5">
+  <listeners>
+    <listener class-name="com.omartharwat.framework.listeners.TestListener"/>
+  </listeners>
+
+  <!-- One browser per test method, classes run in parallel (see DriverManager, ThreadLocal) -->
+  <test name="Swag Labs regression">
+    <classes>
+      <class name="com.omartharwat.saucedemo.tests.LoginTests"/>
+      <class name="com.omartharwat.saucedemo.tests.InventoryTests"/>
+      <class name="com.omartharwat.saucedemo.tests.CartTests"/>
+      <class name="com.omartharwat.saucedemo.tests.CheckoutTests"/>
+      <class name="com.omartharwat.saucedemo.tests.SessionTests"/>
+    </classes>
+  </test>
+</suite>
